@@ -1,8 +1,13 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Sunday</router-link> |
+      <router-link to="/monday">Monday</router-link> |
+      <router-link to="/tuesday">Tuesday</router-link> |
+      <router-link to="/wednesday">Wednesday</router-link> |
+      <router-link to="/thursday">Thursday</router-link> |
+      <router-link to="/friday">Friday</router-link> |
+      <router-link to="/saturday">Saturday</router-link> |
     </div>
     <router-view/>
   </div>
