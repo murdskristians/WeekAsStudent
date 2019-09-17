@@ -7,13 +7,23 @@
       <router-link to="/wednesday">Wednesday</router-link> |
       <router-link to="/thursday">Thursday</router-link> |
       <router-link to="/friday">Friday</router-link> |
-      <router-link to="/saturday">Saturday</router-link> |
+      <router-link to="/saturday">Saturday</router-link>
     </div>
-    <router-view/>
+
+    <div class="container">
+      <router-view/>
+    </div>
+
   </div>
 </template>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+* {
+  background-color: rgb(221, 221, 221);
+
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,9 +36,28 @@
   a {
     font-weight: bold;
     color: #2c3e50;
+    text-decoration: none;
+    font-size: 20px;
     &.router-link-exact-active {
       color: #42b983;
+      font-size: 25px;
     }
   }
+}
+.container {
+  width: 80%;
+  margin: auto;
+  justify-self: center;
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+img {
+  width: 30%;
+}
+p {
+  padding-left: 10%;
+  font-family: 'Dancing Script', cursive;
 }
 </style>
