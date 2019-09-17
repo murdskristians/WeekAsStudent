@@ -14,6 +14,8 @@
       <router-view/>
     </div>
 
+    <div class="footer">Made by Kristiāns Murds, km17055</div>
+
   </div>
 </template>
 
@@ -22,7 +24,7 @@
 
 * {
   background-color: rgb(221, 221, 221);
-
+  margin: 0;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -32,12 +34,15 @@
   color: #2c3e50;
 }
 #nav {
-  padding: 30px;
+  background-color: #2c3e50;
+  padding: 5% 0 3% 0;
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #ffffff;
     text-decoration: none;
     font-size: 20px;
+    background-color: #2c3e50;
+
     &.router-link-exact-active {
       color: #42b983;
       font-size: 25px;
@@ -45,6 +50,7 @@
   }
 }
 .container {
+  padding-top: 5%;
   width: 80%;
   margin: auto;
   justify-self: center;
@@ -52,6 +58,12 @@
 .content {
   display: flex;
   justify-content: center;
+}
+
+.footer{
+  position: fixed;
+  top: 90%;
+  right: 5%;
 }
 img {
   width: 30%;
