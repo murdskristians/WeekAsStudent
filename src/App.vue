@@ -14,8 +14,6 @@
       <router-view/>
     </div>
 
-    <div class="footer">Made by Kristiāns Murds, km17055</div>
-
   </div>
 </template>
 
