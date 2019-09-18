@@ -56,6 +56,12 @@
 .content {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    flex-direction: row;
+  }
 }
 
 .footer{
@@ -64,10 +70,26 @@
   right: 5%;
 }
 img {
-  width: 30%;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5%;
+
+    @media only screen and (min-width: 600px) {
+      /* For tablets: */
+      max-width: 30%;
+    }
 }
 p {
-  padding-left: 10%;
   font-family: 'Dancing Script', cursive;
+    @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    padding-left: 10%;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+
 }
 </style>
