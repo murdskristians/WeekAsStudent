@@ -33,7 +33,7 @@
 }
 #nav {
   background-color: #2c3e50;
-  padding: 5% 0 3% 0;
+  padding: 5% 4% 3% 4%;
   a {
     font-weight: bold;
     color: #ffffff;
@@ -57,6 +57,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 70px;
 
   @media only screen and (min-width: 600px) {
     /* For tablets: */
@@ -66,8 +67,16 @@
 
 .footer{
   position: fixed;
-  top: 90%;
+  bottom: 0;
   right: 5%;
+  width: 100%;
+  padding-top: 2%;
+
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    width: 25%;
+    min-width: 252px;
+  }
 }
 img {
   width: 100%;
