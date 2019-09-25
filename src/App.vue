@@ -88,11 +88,11 @@
 }
 
 .footer{
-  position: fixed;
+  position: static;
   bottom: 0;
   right: 5%;
   width: 100%;
-  padding-top: 2%;
+  padding-top: 5%;
 
   @media only screen and (min-width: 600px) {
     /* For tablets: */
@@ -105,6 +105,34 @@ img {
   width: 100%;
   height: 100%;
   padding-bottom: 5%;
+}
+
+.sunday-color {
+  color:#ba9bc9;
+}
+
+.monday-color {
+  color: #494383;
+}
+
+.tuesday-color {
+  color: #7971d0;
+}
+
+.wednesday-color {
+  color: #8557a7;
+}
+
+.thursday-color {
+  color: #b1337d;
+}
+
+.friday-color {
+  color: #dd437b;
+}
+
+.saturday-color {
+  color: #e5729c;
 }
 
 @media only screen and (min-width: 768px) {
