@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Sunday</router-link> |
-      <router-link to="/monday">Monday</router-link> |
-      <router-link to="/tuesday">Tuesday</router-link> |
-      <router-link to="/wednesday">Wednesday</router-link> |
-      <router-link to="/thursday">Thursday</router-link> |
-      <router-link to="/friday">Friday</router-link> |
-      <router-link to="/saturday">Saturday</router-link>
+      <router-link id="sunday-nav" to="/">Sunday  </router-link>
+      <router-link id="monday-nav" to="/monday">Monday  </router-link>
+      <router-link id="tuesday-nav" to="/tuesday">Tuesday  </router-link>
+      <router-link id="wednesday-nav" to="/wednesday">Wednesday  </router-link>
+      <router-link id="thursday-nav" to="/thursday">Thursday  </router-link>
+      <router-link id="friday-nav" to="/friday">Friday  </router-link>
+      <router-link id="saturday-nav" to="/saturday">Saturday  </router-link>
     </div>
 
     <div class="container">
@@ -18,32 +18,59 @@
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
 * {
   background-color: rgb(221, 221, 221);
   margin: 0;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
 #nav {
-  background-color: #2c3e50;
+  background-color: #78c8c7;
   padding: 5% 4% 3% 4%;
   a {
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
-    font-size: 20px;
-    background-color: #2c3e50;
+    font-size: 16px;
+    background-color: #78c8c7;
 
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    font-size: 18px;
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    font-size: 25px;
+  }
     &.router-link-exact-active {
-      color: #42b983;
-      font-size: 25px;
+      &#sunday-nav {
+        color:#ba9bc9;
+      }
+      &#monday-nav {
+        color: #494383;
+      }
+      &#tuesday-nav {
+        color: #7971d0;
+      }
+      &#wednesday-nav {
+        color: #8557a7;
+      }
+      &#thursday-nav {
+        color: #b1337d;
+      }
+      &#friday-nav {
+        color: #dd437b;
+      }
+      &#saturday-nav {
+        color: #e5729c;
+      }
     }
   }
 }
@@ -58,11 +85,6 @@
   justify-content: center;
   flex-direction: column;
   margin-bottom: 70px;
-
-  @media only screen and (min-width: 600px) {
-    /* For tablets: */
-    flex-direction: row;
-  }
 }
 
 .footer{
@@ -78,24 +100,12 @@
     min-width: 252px;
   }
 }
+
 img {
   width: 100%;
   height: 100%;
   padding-bottom: 5%;
-
-    @media only screen and (min-width: 600px) {
-      /* For tablets: */
-      max-width: 30%;
-    }
 }
-p {
-  font-family: 'Dancing Script', cursive;
-    @media only screen and (min-width: 600px) {
-    /* For tablets: */
-    padding-left: 10%;
-  }
-}
-
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
