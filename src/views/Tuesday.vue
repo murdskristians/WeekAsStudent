@@ -1,6 +1,6 @@
 <template>
   <div class="tuesday content">
-    <img src="@/assets/tuesday.jpg" alt="tuesday">
+    <img src="@/assets/tuesday.png" alt="tuesday">
 
     <h1 class="tuesday-color">{{ message.title[currentLocale] }}</h1>
     <br />
