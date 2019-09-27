@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <div id="nav" class="flex-nav">
       <router-link id="sunday-nav" to="/">Sunday  </router-link>
       <router-link id="monday-nav" to="/monday">Monday  </router-link>
       <router-link id="tuesday-nav" to="/tuesday">Tuesday  </router-link>
@@ -135,6 +135,10 @@ img {
   color: #e5729c;
 }
 
+.flex-nav {
+  display: flex;
+  justify-content: space-around;
+}
 @media only screen and (min-width: 768px) {
   /* For desktop: */
 
