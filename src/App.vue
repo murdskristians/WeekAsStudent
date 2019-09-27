@@ -85,6 +85,10 @@
   justify-content: center;
   flex-direction: column;
   margin-bottom: 70px;
+
+  p {
+    column-count: 2;
+  }
 }
 
 .footer{
