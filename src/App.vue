@@ -89,6 +89,10 @@
   p {
     column-count: 2;
   }
+
+  h1 {
+    font-size: 3em;
+  }
 }
 
 .footer{
