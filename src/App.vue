@@ -1,14 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav" class="flex-nav">
-      <router-link id="sunday-nav" to="/">Sunday  </router-link>
-      <router-link id="monday-nav" to="/monday">Monday  </router-link>
-      <router-link id="tuesday-nav" to="/tuesday">Tuesday  </router-link>
-      <router-link id="wednesday-nav" to="/wednesday">Wednesday  </router-link>
-      <router-link id="thursday-nav" to="/thursday">Thursday  </router-link>
-      <router-link id="friday-nav" to="/friday">Friday  </router-link>
-      <router-link id="saturday-nav" to="/saturday">Saturday  </router-link>
-    </div>
+
+  <div>
+    <b-navbar toggleable="lg" type="light" id="nav">
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav id="nav" class="flex-nav">
+          <router-link id="sunday-nav" to="/">Sunday  </router-link>
+          <router-link id="monday-nav" to="/monday">Monday  </router-link>
+          <router-link id="tuesday-nav" to="/tuesday">Tuesday  </router-link>
+          <router-link id="wednesday-nav" to="/wednesday">Wednesday  </router-link>
+          <router-link id="thursday-nav" to="/thursday">Thursday  </router-link>
+          <router-link id="friday-nav" to="/friday">Friday  </router-link>
+          <router-link id="saturday-nav" to="/saturday">Saturday  </router-link>
+        </b-navbar-nav>
+
+    </b-collapse>
+  </b-navbar>
+</div>
 
     <div class="container">
       <router-view/>
@@ -30,10 +40,16 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+
+  .bg-info {
+    background-color: #78c8c7 !important
+  }
 }
 #nav {
   background-color: #78c8c7;
-  padding: 5% 4% 3% 4%;
+  padding: 2% 2% 1% 2%;
+  width: 100%;
+
   a {
     font-weight: bold;
     color: #ffffff;
@@ -147,6 +163,7 @@ img {
   display: flex;
   justify-content: space-around;
 }
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
 
