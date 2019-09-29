@@ -103,7 +103,16 @@
   margin-bottom: 70px;
 
   p {
+    
+    @media only screen and (min-width: 600px) {
+    /* For tablets: */
     column-count: 2;
+    -webkit-column-rule: 1px solid #78c8c7;
+    -moz-column-rule: 1px solid #78c8c7;
+    column-rule: 1px solid #78c8c7;
+    column-gap: 10%;
+    }
+
   }
 
   h1 {
