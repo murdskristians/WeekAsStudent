@@ -5,7 +5,7 @@
     <h1 class="friday-color">{{ message.title[currentLocale] }}</h1>
     <br />
     <p>{{ message.content[currentLocale] }}</p>
-
+  <!-- <b-button variant="danger">Button</b-button> -->
     <div class="footer friday-color">
       <select v-model="currentLocale">
           <option
