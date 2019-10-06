@@ -50,6 +50,9 @@
   padding: 2% 2% 1% 2%;
   width: 100%;
 
+button {
+  width:100%;
+}
   a {
     font-weight: bold;
     color: #ffffff;
@@ -64,6 +67,10 @@
   @media only screen and (min-width: 768px) {
     /* For desktop: */
     font-size: 25px;
+  }
+  @media only screen and (min-width: 2000px) {
+    /* For desktop: */
+    font-size: 50px;
   }
     &.router-link-exact-active {
       &#sunday-nav {
@@ -103,7 +110,7 @@
   margin-bottom: 70px;
 
   p {
-    
+
     @media only screen and (min-width: 600px) {
     /* For tablets: */
     column-count: 2;
@@ -126,6 +133,10 @@
   right: 5%;
   width: 100%;
   padding-top: 5%;
+
+  select {
+    margin-bottom: 20px;
+  }
 
   @media only screen and (min-width: 600px) {
     /* For tablets: */
