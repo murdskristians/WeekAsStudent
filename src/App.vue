@@ -74,7 +74,7 @@ button {
   }
     &.router-link-exact-active {
       &#sunday-nav {
-        color:#ba9bc9;
+        color:#00767a;
       }
       &#monday-nav {
         color: #494383;
@@ -152,7 +152,7 @@ img {
 }
 
 .sunday-color {
-  color:#ba9bc9;
+  color:#00767a;
 }
 
 .monday-color {
