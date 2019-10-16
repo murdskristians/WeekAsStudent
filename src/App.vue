@@ -109,8 +109,12 @@ button {
   flex-direction: column;
   margin-bottom: 70px;
 
-  p {
+  .special-text {
+    font-size: 1.5em;
+    font-weight: 900;
+  }
 
+  p {
     @media only screen and (min-width: 600px) {
     /* For tablets: */
     column-count: 2;
