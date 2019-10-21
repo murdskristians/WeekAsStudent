@@ -20,6 +20,8 @@
           </option>
       </select>
       <div>Made by Kristiāns Murds, km17055</div>
+      <div>Week As LU student</div>
+
     </div>
 
   </div>
