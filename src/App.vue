@@ -110,6 +110,10 @@ button {
     }
   }
 }
+.flex-nav {
+  display: flex;
+  justify-content: space-around;
+}
 .container {
   padding-top: 5%;
   width: 80%;
@@ -196,13 +200,4 @@ img {
   color: #e5729c;
 }
 
-.flex-nav {
-  display: flex;
-  justify-content: space-around;
-}
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-
-}
 </style>
