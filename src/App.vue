@@ -73,6 +73,19 @@ button {
     font-size: 50px;
   }
     &.router-link-exact-active {
+      @media only screen and (min-width: 600px) {
+        /* For tablets: */
+        font-size: 22px;
+      }
+      @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        font-size: 30px;
+      }
+      @media only screen and (min-width: 2000px) {
+        /* For desktop: */
+        font-size: 55px;
+      }
+
       &#sunday-nav {
         color:#00767a;
       }
