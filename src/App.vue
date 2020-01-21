@@ -1,77 +1,81 @@
 <template>
   <div id="app">
+    <div>
+      <b-navbar toggleable="lg" type="light" id="nav">
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-  <div>
-    <b-navbar toggleable="lg" type="light" id="nav">
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav id="nav" class="flex-nav">
-          <router-link id="sunday-nav" to="/">Sunday  </router-link>
-          <router-link id="monday-nav" to="/monday">Monday  </router-link>
-          <router-link id="tuesday-nav" to="/tuesday">Tuesday  </router-link>
-          <router-link id="wednesday-nav" to="/wednesday">Wednesday  </router-link>
-          <router-link id="thursday-nav" to="/thursday">Thursday  </router-link>
-          <router-link id="friday-nav" to="/friday">Friday  </router-link>
-          <router-link id="saturday-nav" to="/saturday">Saturday  </router-link>
-        </b-navbar-nav>
-
-    </b-collapse>
-  </b-navbar>
-</div>
-
-    <div class="container">
-      <router-view/>
+        <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav id="nav" class="flex-nav">
+            <router-link id="sunday-nav" to="/">Sunday</router-link>
+            <router-link id="monday-nav" to="/monday">Monday</router-link>
+            <router-link id="tuesday-nav" to="/tuesday">Tuesday</router-link>
+            <router-link id="wednesday-nav" to="/wednesday">Wednesday</router-link>
+            <router-link id="thursday-nav" to="/thursday">Thursday</router-link>
+            <router-link id="friday-nav" to="/friday">Friday</router-link>
+            <router-link id="saturday-nav" to="/saturday">Saturday</router-link>
+          </b-navbar-nav>
+        </b-collapse>
+      </b-navbar>
     </div>
 
+    <div class="container">
+      <router-view />
+    </div>
   </div>
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
 
 * {
   background-color: rgb(221, 221, 221);
   margin: 0;
 }
 #app {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 
   .bg-info {
-    background-color: #78c8c7 !important
+    background-color: #78c8c7 !important;
   }
 }
+
 #nav {
+      
   background-color: #78c8c7;
   padding: 2% 2% 1% 2%;
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
+text-align: right;
 
-button {
-  width:100%;
-}
+  @media only screen and (min-width: 992px) {
+    justify-content: space-evenly;
+    border-bottom-left-radius: 0;
+  }
+
   a {
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
-    background-color: #78c8c7;
-
-  @media only screen and (min-width: 600px) {
-    /* For tablets: */
-    font-size: 18px;
-  }
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    font-size: 25px;
-  }
-  @media only screen and (min-width: 2000px) {
-    /* For desktop: */
-    font-size: 50px;
-  }
+    // background-color: #78c8c7;
+background: transparent;
+    @media only screen and (min-width: 600px) {
+      /* For tablets: */
+      font-size: 18px;
+    }
+    @media only screen and (min-width: 768px) {
+      /* For desktop: */
+      font-size: 25px;
+    }
+    @media only screen and (min-width: 2000px) {
+      /* For desktop: */
+      font-size: 50px;
+    }
     &.router-link-exact-active {
       @media only screen and (min-width: 600px) {
         /* For tablets: */
@@ -87,7 +91,7 @@ button {
       }
 
       &#sunday-nav {
-        color:#00767a;
+        color: #00767a;
       }
       &#monday-nav {
         color: #494383;
@@ -110,10 +114,6 @@ button {
     }
   }
 }
-.flex-nav {
-  display: flex;
-  justify-content: space-around;
-}
 .container {
   padding-top: 5%;
   width: 80%;
@@ -133,14 +133,13 @@ button {
 
   p {
     @media only screen and (min-width: 600px) {
-    /* For tablets: */
-    column-count: 2;
-    -webkit-column-rule: 1px solid #78c8c7;
-    -moz-column-rule: 1px solid #78c8c7;
-    column-rule: 1px solid #78c8c7;
-    column-gap: 10%;
+      /* For tablets: */
+      column-count: 2;
+      -webkit-column-rule: 1px solid #78c8c7;
+      -moz-column-rule: 1px solid #78c8c7;
+      column-rule: 1px solid #78c8c7;
+      column-gap: 10%;
     }
-
   }
 
   h1 {
@@ -148,7 +147,7 @@ button {
   }
 }
 
-.footer{
+.footer {
   position: static;
   bottom: 0;
   right: 5%;
@@ -173,7 +172,7 @@ img {
 }
 
 .sunday-color {
-  color:#00767a;
+  color: #00767a;
 }
 
 .monday-color {
@@ -199,5 +198,4 @@ img {
 .saturday-color {
   color: #e5729c;
 }
-
 </style>
