@@ -39,7 +39,13 @@
     </p>
 
     <div class="footer friday-color">
-      <b-form-select v-model="selected" :options="options" size="sm" label-align="center" class="mt-3"></b-form-select>
+      <b-form-select
+        v-model="selected"
+        :options="options"
+        size="sm"
+        label-align="center"
+        class="mt-3"
+      ></b-form-select>
 
       <div>Made by Kristiāns Murds, km17055</div>
       <div>Week As LU student</div>
