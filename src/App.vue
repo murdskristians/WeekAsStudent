@@ -6,13 +6,13 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav id="nav" class="flex-nav">
-            <router-link id="sunday-nav" to="/">Sunday</router-link>
-            <router-link id="monday-nav" to="/monday">Monday</router-link>
-            <router-link id="tuesday-nav" to="/tuesday">Tuesday</router-link>
-            <router-link id="wednesday-nav" to="/wednesday">Wednesday</router-link>
-            <router-link id="thursday-nav" to="/thursday">Thursday</router-link>
-            <router-link id="friday-nav" to="/friday">Friday</router-link>
-            <router-link id="saturday-nav" to="/saturday">Saturday</router-link>
+            <b-nav-item> <router-link id="sunday-nav" to="/">Sunday</router-link></b-nav-item>
+            <b-nav-item> <router-link id="monday-nav" to="/monday">Monday</router-link></b-nav-item>
+            <b-nav-item> <router-link id="tuesday-nav" to="/tuesday">Tuesday</router-link></b-nav-item>
+            <b-nav-item> <router-link id="wednesday-nav" to="/wednesday">Wednesday</router-link></b-nav-item>
+            <b-nav-item> <router-link id="thursday-nav" to="/thursday">Thursday</router-link></b-nav-item>
+            <b-nav-item> <router-link id="friday-nav" to="/friday">Friday</router-link></b-nav-item>
+            <b-nav-item> <router-link id="saturday-nav" to="/saturday">Saturday</router-link></b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -52,6 +52,9 @@ export default {};
   background-color: rgb(221, 221, 221);
   margin: 0;
 }
+body {
+  min-width: 360px;
+}
 #app {
   font-family: "Source Sans Pro", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -75,6 +78,10 @@ export default {};
   @media only screen and (min-width: 992px) {
     justify-content: space-evenly;
     border-bottom-left-radius: 0;
+  }
+
+  .nav-item {
+    background: transparent;
   }
 
   a {
