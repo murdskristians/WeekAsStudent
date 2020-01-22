@@ -24,6 +24,26 @@
   </div>
 </template>
 
+<script>
+var options = {
+  bottom: "64px", // default: '32px'
+  right: "unset", // default: '32px'
+  left: "32px", // default: 'unset'
+  time: "0.5s", // default: '0.3s'
+  mixColor: "#fff", // default: '#fff'
+  backgroundColor: "#fff", // default: '#fff'
+  buttonColorDark: "#100f2c", // default: '#100f2c'
+  buttonColorLight: "#fff", // default: '#fff'
+  saveInCookies: true, // default: true,
+  label: "🌓", // default: ''
+  autoMatchOsTheme: true // default: true
+};
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+
+export default {};
+</script>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
@@ -45,13 +65,12 @@
 }
 
 #nav {
-      
   background-color: #78c8c7;
   padding: 2% 2% 1% 2%;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-text-align: right;
+  text-align: right;
 
   @media only screen and (min-width: 992px) {
     justify-content: space-evenly;
@@ -64,7 +83,7 @@ text-align: right;
     text-decoration: none;
     font-size: 16px;
     // background-color: #78c8c7;
-background: transparent;
+    background: transparent;
     @media only screen and (min-width: 600px) {
       /* For tablets: */
       font-size: 18px;
@@ -170,6 +189,7 @@ img {
   width: 100%;
   height: 100%;
   padding-bottom: 5%;
+  background: transparent;
 }
 
 .sunday-color {
