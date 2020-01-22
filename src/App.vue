@@ -78,6 +78,7 @@ body {
   @media only screen and (min-width: 992px) {
     justify-content: space-evenly;
     border-bottom-left-radius: 0;
+    padding-right: 0;
   }
 
   .nav-item {
@@ -89,8 +90,8 @@ body {
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
-    // background-color: #78c8c7;
     background: transparent;
+
     @media only screen and (min-width: 600px) {
       /* For tablets: */
       font-size: 18px;
@@ -100,10 +101,12 @@ body {
       font-size: 25px;
     }
     @media only screen and (min-width: 2000px) {
-      /* For desktop: */
+      /* For tv: */
       font-size: 50px;
     }
     &.router-link-exact-active {
+      padding-right: 15px;
+
       @media only screen and (min-width: 600px) {
         /* For tablets: */
         font-size: 22px;
@@ -113,7 +116,7 @@ body {
         font-size: 30px;
       }
       @media only screen and (min-width: 2000px) {
-        /* For desktop: */
+        /* For tv: */
         font-size: 55px;
       }
 
