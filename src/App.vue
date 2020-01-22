@@ -151,7 +151,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 
   .special-text {
     font-size: 1.5em;
